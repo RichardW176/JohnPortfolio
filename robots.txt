@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://richardw176.github.io/JohnPortfolio/sitemap.xml

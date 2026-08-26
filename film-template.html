@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================
+     FILM PAGE TEMPLATE
+     Copy this file once per film — e.g. films/the-quiet-part.html —
+     then replace every EDIT: marker. Keep the file name url-safe.
+     ============================================================ -->
+
+<title>Film Title — John Recendez</title><!-- EDIT -->
+<meta name="description" content="Film Title (2025), a short film written and directed by John Recendez."><!-- EDIT -->
+<meta name="theme-color" content="#0a0a0b">
+<meta property="og:type" content="video.movie">
+<meta property="og:title" content="Film Title — John Recendez"><!-- EDIT -->
+<meta property="og:description" content="A short film written and directed by John Recendez."><!-- EDIT -->
+<meta property="og:url" content="https://richardw176.github.io/JohnPortfolio/film-template.html"><!-- EDIT -->
+<meta property="og:image" content="https://richardw176.github.io/JohnPortfolio/assets/img/og.jpg"><!-- EDIT: this film's still -->
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://richardw176.github.io/JohnPortfolio/film-template.html"><!-- EDIT -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0b'/><text x='50' y='72' font-size='64' font-family='Georgia,serif' fill='%23f2f0ed' text-anchor='middle'>R</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Primary">
+    <a class="nav__brand" href="./">John Recendez</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav__toggle-bar" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <ul class="nav__menu" id="nav-menu">
+      <li><a href="./films.html" aria-current="page">Films</a></li>
+      <li><a href="./writing.html">Writing</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./about.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ── HERO STILL — full-bleed, 21:9 ──────────────────────── -->
+  <div class="film-hero__still">
+    <!-- EDIT: <img src="./assets/img/films/title-hero.jpg" alt="" width="2100" height="900"> -->
+    <span class="tile__placeholder">Hero still 21:9</span>
+  </div>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <p class="label" data-reveal>2025 · Short · 14 min</p><!-- EDIT -->
+      <h1 data-reveal style="font-family:var(--serif);font-size:var(--step-3);line-height:1;margin-top:.75rem">
+        Film Title<!-- EDIT -->
+      </h1>
+      <p class="hero__lede" data-reveal style="margin-top:1.5rem">
+        <!-- EDIT: the logline. One sentence. -->
+        A logline goes here — one sentence that says what happens and to whom.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── PLAYER ─────────────────────────────────────────────── -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="embed" data-reveal>
+        <!-- EDIT: paste the Vimeo or YouTube embed. Keep title= for screen readers.
+             Vimeo:  <iframe src="https://player.vimeo.com/video/VIDEO_ID" title="Film Title" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+             YouTube: <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Film Title" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+             Until then, the placeholder below stands in. -->
+        <span class="tile__placeholder">Vimeo / YouTube embed</span>
+      </div>
+      <p class="label" data-reveal style="margin-top:1rem">
+        Password-protected? Put the password here, or link to a private screener.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── SYNOPSIS + CREDITS ─────────────────────────────────── -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap about">
+
+      <div class="prose" data-reveal style="max-width:var(--measure)">
+        <h2 style="margin-top:0;font-size:var(--step-2)">Synopsis</h2>
+        <p>
+          <!-- EDIT: two or three paragraphs. What the film is about, and what
+               you were after. Resist explaining it. -->
+          A paragraph of synopsis. What happens, who it happens to, and roughly
+          where it leaves them.
+        </p>
+        <p>
+          A second paragraph if the film needs one — often about the making of
+          it, or what you were reaching for.
+        </p>
+
+        <h2 style="font-size:var(--step-1)">Festivals &amp; awards</h2>
+        <ul class="laurels" style="margin-top:1rem">
+          <!-- EDIT: one <li> per selection; delete the section if empty -->
+          <li>Festival Name 2025 — Official Selection</li>
+          <li>Festival Name 2025 — Best Short</li>
+          <li>Festival Name 2026 — Nominee</li>
+        </ul>
+      </div>
+
+      <aside data-reveal>
+        <h2 class="label" style="margin-bottom:1rem">Credits</h2>
+        <dl class="credits">
+          <!-- EDIT: one block per credit line -->
+          <div class="credit"><dt>Written by</dt><dd>John Recendez</dd></div>
+          <div class="credit"><dt>Directed by</dt><dd>John Recendez</dd></div>
+          <div class="credit"><dt>Produced by</dt><dd>Name</dd></div>
+          <div class="credit"><dt>Cinematography</dt><dd>Name</dd></div>
+          <div class="credit"><dt>Editor</dt><dd>Name</dd></div>
+          <div class="credit"><dt>Sound</dt><dd>Name</dd></div>
+          <div class="credit"><dt>Music</dt><dd>Name</dd></div>
+          <div class="credit"><dt>Starring</dt><dd>Name, Name, Name</dd></div>
+        </dl>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ── STILLS ─────────────────────────────────────────────── -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section__head" data-reveal>
+        <h2 class="section__title" style="font-size:var(--step-1)">Stills</h2>
+      </div>
+    </div>
+    <div class="film-grid" data-reveal>
+      <!-- EDIT: replace each with <img src="..." alt="" loading="lazy"> inside .tile -->
+      <span class="tile"><span class="tile__placeholder">Still</span></span>
+      <span class="tile"><span class="tile__placeholder">Still</span></span>
+      <span class="tile"><span class="tile__placeholder">Still</span></span>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap">
+      <a class="arrow" href="./films.html">All films</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p class="label">&copy; <span data-year>2026</span> John Recendez</p>
+    <ul class="social label">
+      <li><a href="#">Vimeo</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Letterboxd</a></li>
+      <li><a href="#">IMDb</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="./assets/js/main.js" defer></script>
+</body>
+</html>
