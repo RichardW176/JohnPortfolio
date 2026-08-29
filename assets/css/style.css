@@ -301,7 +301,9 @@ main { padding-top: var(--header-h); }
   transition: background .3s var(--ease);
 }
 @media (min-width: 48rem) {
-  .entry { grid-template-columns: 9rem minmax(0, 1fr) 7rem; align-items: baseline; }
+  /* Last column holds publication names like THE GOBY REVIEW at .16em
+     tracking — 7rem broke those onto three lines. */
+  .entry { grid-template-columns: 9rem minmax(0, 1fr) 11rem; align-items: baseline; }
   .entry__where { text-align: right; }
 }
 .entry:hover { background: var(--bg-soft); }
@@ -403,3 +405,67 @@ main { padding-top: var(--header-h); }
    ============================================================ */
 .page-404 { min-height: 68svh; display: grid; place-content: center; text-align: center; gap: 1.5rem; }
 .page-404 h1 { font-family: var(--serif); font-size: var(--step-3); }
+
+/* ============================================================
+   POETRY — the line breaks are the author's. Nothing in here may
+   re-flow them, so every line is its own block with a hanging
+   indent: a wrapped line steps in, and never reads as a new one.
+   ============================================================ */
+.piece__title {
+  font-family: var(--serif);
+  font-size: var(--step-3);
+  line-height: 1;
+  margin-top: .75rem;
+}
+.piece__sub {
+  font-family: var(--serif);
+  font-size: var(--step-1);
+  color: var(--text-dim);
+  margin-top: .75rem;
+}
+
+/* Poems run wider than --measure: these lines are long, and a
+   38rem column would wrap almost all of them. */
+.poem { font-family: var(--serif); font-size: var(--step-1); line-height: 1.5; max-width: 46rem; }
+.poem__stanza + .poem__stanza { margin-top: 1.5em; }
+.poem__line { display: block; padding-left: 1.5em; text-indent: -1.5em; }
+
+.poem sup, .prose sup { font-family: var(--sans); font-size: .5em; font-weight: 600; letter-spacing: .04em; }
+.poem sup a, .prose sup a { text-decoration: none; color: var(--text-dim); transition: color .2s var(--ease); }
+.poem sup a:hover, .prose sup a:hover { color: var(--text-bright); }
+
+/* Original and translation, stacked. Second and later versions
+   are fenced off by a rule so the switch is unmissable. */
+.version + .version {
+  margin-top: clamp(3rem, 7vw, 5rem);
+  padding-top: clamp(3rem, 7vw, 5rem);
+  border-top: 1px solid var(--line);
+}
+.version__label { margin-bottom: clamp(1.5rem, 3.5vw, 2.25rem); }
+.version:target .version__label { color: var(--text-bright); }
+
+.notes {
+  counter-reset: note;
+  max-width: 46rem;
+  margin-top: clamp(2.25rem, 5vw, 3rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+.notes li {
+  counter-increment: note;
+  position: relative;
+  padding-left: 2rem;
+  padding-block: .4rem;
+  font-size: var(--step--1);
+  color: var(--text-dim);
+}
+.notes li::before {
+  content: counter(note);
+  position: absolute; left: 0; top: .55rem;
+  font-family: var(--sans); font-size: var(--step--2);
+  font-weight: 600; letter-spacing: .04em;
+}
+.notes li:target { color: var(--text); }
+
+/* Publication credit under a piece title */
+.piece-meta { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin-top: 1.5rem; }
