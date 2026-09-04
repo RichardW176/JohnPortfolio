@@ -242,6 +242,8 @@ main { padding-top: var(--header-h); }
   width: 100%;
 }
 .film-grid--dense { grid-template-columns: repeat(4, 1fr); }
+/* Two films in a 3-up grid left a hole in the last column. */
+.film-grid--two { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 62rem) {
   .film-grid, .film-grid--dense { grid-template-columns: repeat(2, 1fr); }
 }
