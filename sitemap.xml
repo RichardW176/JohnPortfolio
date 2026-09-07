@@ -2,43 +2,43 @@
 <!-- Add one <url> block per film page as you create them. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://richardw176.github.io/JohnPortfolio/</loc>
+    <loc>https://johnrecendez.github.io/John-Portfolio/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://richardw176.github.io/JohnPortfolio/films.html</loc>
+    <loc>https://johnrecendez.github.io/John-Portfolio/films.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://richardw176.github.io/JohnPortfolio/chinatown-express.html</loc>
+    <loc>https://johnrecendez.github.io/John-Portfolio/chinatown-express.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://richardw176.github.io/JohnPortfolio/writing.html</loc>
+    <loc>https://johnrecendez.github.io/John-Portfolio/writing.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://richardw176.github.io/JohnPortfolio/about.html</loc>
+    <loc>https://johnrecendez.github.io/John-Portfolio/about.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://richardw176.github.io/JohnPortfolio/writing/self-domesticating.html</loc>
+    <loc>https://johnrecendez.github.io/John-Portfolio/writing/self-domesticating.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://richardw176.github.io/JohnPortfolio/writing/kagl.html</loc>
+    <loc>https://johnrecendez.github.io/John-Portfolio/writing/kagl.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://richardw176.github.io/JohnPortfolio/writing/oaxaca-mi-amor.html</loc>
+    <loc>https://johnrecendez.github.io/John-Portfolio/writing/oaxaca-mi-amor.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://richardw176.github.io/JohnPortfolio/writing/y-una-campana.html</loc>
+    <loc>https://johnrecendez.github.io/John-Portfolio/writing/y-una-campana.html</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://richardw176.github.io/JohnPortfolio/writing/con-todo.html</loc>
+    <loc>https://johnrecendez.github.io/John-Portfolio/writing/con-todo.html</loc>
     <priority>0.6</priority>
   </url>
 </urlset>

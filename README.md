@@ -3,7 +3,7 @@
 Static portfolio site. No build step, no dependencies, no framework — plain
 HTML, CSS, and JS served straight from GitHub Pages.
 
-**Live:** https://richardw176.github.io/JohnPortfolio/
+**Live:** https://johnrecendez.github.io/John-Portfolio/
 
 ## Pages
 
@@ -71,10 +71,11 @@ paths that only resolve over a server.
 
 ## Note on paths
 
-This is a *project* page, so the site lives under `/JohnPortfolio/`. Content
+This is a *project* page, so the site lives under `/John-Portfolio/`. Content
 pages use relative paths (`./assets/...`); `404.html` uses absolute ones
-(`/JohnPortfolio/assets/...`) because it can be served from any depth.
+(`/John-Portfolio/assets/...`) because it can be served from any depth.
 
-If you ever rename this repo to `RichardW176.github.io`, or point a custom
-domain at it, update the absolute paths in `404.html` and the URLs in
+If you ever rename this repo to `johnrecendez.github.io`, or point a custom
+domain at it, the site moves to the root and the `/John-Portfolio/` segment
+goes away. Update the absolute paths in `404.html` and the URLs in
 `robots.txt`, `sitemap.xml`, and the `og:`/`canonical` tags in every page.
